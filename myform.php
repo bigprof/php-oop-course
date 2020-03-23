@@ -6,15 +6,16 @@
          'action' => 'form-handler.php'
     ]);
 
-    $form2 = new Form();
+    // $form2 = new Form();
 
-    $lf = new LoginForm([]);
+    // $lf = new LoginForm([]);
 
     $form->textbox([
          'name' => 'fullName', 
          'label' => 'Full name', 
          'required' => true, 
-         'length' => 100 
+         'length' => 100,
+         'value' => 'Samir Aly'
     ]);
 
     $form->select([ 
@@ -36,4 +37,6 @@
     // $form->button(), 
     // $form->hidden()
 
+    //echo Bootstrap::header();
     echo $form->html();
+    //echo Bootstrap::footer();

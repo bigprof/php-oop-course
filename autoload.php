@@ -10,11 +10,11 @@
 	spl_autoload_register(function ($className) {
 		if(is_file('lib/' . $className . '.php'))
 			require 'lib/' . $className . '.php';
-		echo '<br>I am first autoloader';
+		// echo '<br>I am first autoloader';
 	});
 
 	spl_autoload_register(function ($className) {
 		if(is_file('vendor/' . $className . '.php'))
 			require 'vendor/' . $className . '.php';
-		echo '<br>I am second autoloader';
+		// echo '<br>I am second autoloader';
 	});
