@@ -18,11 +18,14 @@
          'value' => 'Samir Aly'
     ]);
 
-    $form->select([ 
+    $form->select([
          'name' => 'gender', 
          'options' => [
-             'm' => 'Male', 
-             'f' => 'Female'
+             '1' => 'abc', 
+             '2' => 'def',
+             '3' => 'xsw',
+             '4' => 'rrr',
+             '5' => 'ggg',
          ]
     ]);
 

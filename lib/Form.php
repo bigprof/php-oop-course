@@ -23,8 +23,21 @@
 			);
 		}
 
-		public function select($options = []) {
+		public function select($op = []) {
+			$selectOptions = [];
+			foreach ($op['options'] as $key => $value) {
+				$selectOptions[] = sprintf(
+					'<option value="%s">%s</option>',
+					$key,
+					$value
+				);
+			}
 
+			$this->htmlCode[] = sprintf(
+				'<select name="%s">%s</select>',
+				$op['name'],
+				implode('', $selectOptions)
+			);
 		}
 
 		public function email($options = []) {
