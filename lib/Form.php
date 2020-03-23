@@ -4,7 +4,7 @@
 			echo '<br>Hello .. I\'m Form constructor!';
 		}
 
-		private function validate() {
+		protected function validate() {
 			echo '<br>Form::validate';
 		}
 

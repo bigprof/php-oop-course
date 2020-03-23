@@ -1,11 +1,14 @@
 <?php
-    //include('autoload.php');
-    include('Form.php');
+    include('autoload.php');
 
     $form = new Form([
          'method' => 'POST',
          'action' => 'form-handler.php'
     ]);
+
+    $form2 = new Form();
+
+    $lf = new LoginForm([]);
 
     $form->textbox([
          'name' => 'fullName', 
