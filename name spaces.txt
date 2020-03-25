@@ -1,0 +1,19 @@
+name spaces
+
+abbas\Authentation
+
+peter\Authentation
+
+zend\auth\Authentation
+
+PSR-4
+	vendor/zend/auth/Authentation.php
+
+use zend as z;
+
+$auth = z\auth\Authentation;
+
+/ 
+\
+
+/
