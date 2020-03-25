@@ -1,0 +1,30 @@
+Namespace rules that we should follow:
+
+1. write our own components with a namespace:
+	our-company-name\component-namespace
+	ex: iti\auth
+
+2. in all files of our project:
+	include autoloader
+	use our own namespace
+	ex:
+
+	include('autoloader.php');
+	use iti\auth as me;
+
+	$auth = me\Auth;
+
+3. for 3rd party components:
+	use qualified namespace
+	or:
+	use alias
+
+	ex 1:
+	$auth = new peter\auth\Auth;
+
+	ex 2:
+
+	use peter\auth as pa;
+
+	$auth = pa\Auth;
+
