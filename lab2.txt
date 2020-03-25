@@ -1,0 +1,23 @@
+survey
+
+survey/question1
+	How speedy is your new S25X mobile?
+	radios: 
+		very slow
+		slow
+		ok
+		fast
+		super fast
+
+survey/question2
+	How likely would you recommend S25X to your friends
+		select:
+			will never do that!
+			maybe
+			might recommend it
+			very likely
+
+survey/q3
+
+survey/thankyou
+

@@ -1,0 +1,12 @@
+https://github.com/bigprof/php-oop-course
+
+MVC pattern
+
+Model View Controller
+
+<?php
+
+	// entry point (index.php: routing: request > controller)
+	// controller: load models > data > view > client
+
+	view('dashboard', $vars);
